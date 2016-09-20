@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Box Model</title>
+	<style type="text/css">
+
+	div{
+		float: left;
+		
+	}
+		/* class selector thumbnail */
+		
+		#special{
+			background-color: rgb(255,0,0);
+			border: 0;
+			padding: 0;
+			margin: 20px;
+		}
+
+		.thumbnail{
+			/*hex color RRGGBB*/
+			background-color: #006FFF;
+			width: 200px;
+			height: 200px;
+		}
+		.outline-red{
+			border-width: 2px;
+			border-style: solid;
+			border-color: red;
+			/*shorthand border*/
+			border: 2px solid red;
+
+			border-left: 10px dashed yellow;
+		}
+
+		/*padding applies spacing within the element between its edge and the content within*/
+
+		.padded{
+			padding: 50px;
+			padding-top: 10px;
+			/*passing: top/bottom | left/right */
+			padding: 20px 2px;
+			/*padding top | right | bottom | left */
+			padding: 10px 20px 30px 40px
+		}
+		/* id selector should only be applied to one element per page */
+
+	
+	</style>
+</head>
+<body>
+
+	<div class="thumbnail">This is going to be a 200px by 200px div</div>
+
+	<div class="thumbnail">Antoher div!</div>
+
+	<div class="thumbnail outline-red">third div is 204px by 204px becuase of boarder around</div>
+
+	<div class="thumbnail padded">take a look at the placement of the contant in this div
+	padding like border adds to the dimensions of our element</div>
+
+	<!-- lets override all of our defaults with an id -->
+	<div class="thumbnail padded outline-red" id="special"></div>
+
+</body>
+</html>

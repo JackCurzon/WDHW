@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Layout 2: 3 equal columns 2 ways</title>
+	<style type="text/css">
+		div, header, footer, section, article, aside, main{
+			background-color: rgba(0,0,255,.2);
+			min-height: 100px;
+		}
+		main{
+			width: 960px;
+			margin: 0 auto;
+		}
+		.col-pixels{
+			width: 300px;
+			margin: 0 10px;
+			float: left;
+		}
+
+		.clear-fix:after{
+			display: block;
+			clear: both;
+			height: 0;
+			font-size: 0;
+			content: " ";
+			visibility: hidden;
+		}
+
+		article.col-fluid section{
+			/* 100% browser width - 8 * 2.5% / 4 */
+			width: 20%;
+			margin: 2.5%;
+			float: left;
+		}
+	
+
+	</style>
+</head>
+<body>
+<header>
+	header
+</header>
+<main class="clear-fix">
+	<h1>3 column fixed width with wrapper</h1>
+	<article class="col-pixels"></article>
+	<article class="col-pixels"></article>
+	<article class="col-pixels"></article>
+</main>
+
+<h2>Fluid Layout</h2>
+<article class="clear-fix col-fluid">
+<section>
+<h3>fluid sectionn</h3>
+</section>
+<section>
+<h3>fluid sectionn</h3>
+</section>
+<section>
+<h3>fluid sectionn</h3>
+</section>
+<section>
+<h3>fluid sectionn</h3>
+</section>
+</article>
+
+<footer>
+	footer
+</footer>
+</body>
+</html>
