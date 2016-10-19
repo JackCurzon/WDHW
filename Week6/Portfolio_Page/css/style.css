@@ -68,19 +68,33 @@ Copyright 2013, Josh Cope
 	background: #72C02C
 }
 
-.view-portfolio img{
-	position: relative;
+.view img{
 	transition: all 0.6s ease-in-out;
 }
 
-.view-portfolio h2{
-	color: #333;
-	margin: 10px 40px;
-	background: transparent;
-	border-bottom: 1px solid rgba(0,0,0,0.3)
+.view-portfolio .mask{
+	transition: all 0.5s linear;
+	/*opacity: 0; */
 }
 
+.view-portfolio h2, .view-portfolio p, .view-portfolio a.info{
+	transform: scale(0);
+	transition: all .5s linear;
+}
 
+.view-portfolio:hover img{
+	transform: scale(2) rotate(10deg);
+	opacity: 0.3
+}
+
+.view-portfolio:hover .mask{
+	opacity: 1;
+}
+
+.view-portfolio:hover h2, .view-portfolio:hover p, .view-portfolio:hover a.info{
+	transform: scale(1);
+	opacity: 1;
+}
 
 /* =============================================================================
    Page Styles
