@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Simple HTML5 Geolocation</title>
+	<script type="text/javascript">
+		
+	function getLocation(){
+		if (navigator.geolocation) {
+			navigator.geolocation.getCurrentPosition(setPosition);
+		}else{
+			alert("Geolocation is not supported by your browser");
+		}
+	}
+
+	function setPosition(position){
+		var lat = position.coords.latitude;
+		var lon = position.coords.longitude;
+
+		var loc = document.getElementById("location");
+		loc.innerHTML = "Latitude: " + lat + "<br> Longitude" + lon;
+	}
+
+	document.addEventListener("DOMContentLoaded", function(event){
+		getLocation();
+	});
+
+	</script>
+</head>
+<body onload="getLocation();">
+	<div id="location">
+		
+	</div>
+</body>
+</html>

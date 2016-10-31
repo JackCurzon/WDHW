@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JSON</title>
+	<script type="text/javascript">
+		
+		var customer = {
+			firstName: "Tony",
+			lastName: "Pony",
+			pets:["dog", "cat", "iguana"]
+		};
+
+		console.log(customer.firstName);
+		console.log(customer.lastName);
+		console.log(customer.pets[1]);
+		for(var i = 0; i < customer.pets.lenght; i++){
+			console.log(customer.pets[i]);
+		}
+
+		customer.age = 45;
+		console.log(customer);
+
+		var myClass = { 
+    me: {
+        firstName: "Tony",
+        lastName: "Pony",
+        pets: ["Dog", "Cat", "Iguana"]
+    },
+    others: [
+        {
+        firstName: "Sally",
+        lastName: "Omally",
+        pets: ["ButterFly", "Bird"]
+        },
+        {
+        firstName: "Billy",
+        lastName: "Goat",
+        pets: ["Snake", "Fish"]
+        },
+        {
+        firstName: "Tara",
+        lastName: "Ohara",
+        pets: ["Gecko", "Lizard"]
+        }
+    ]
+};
+
+console.log(myClass.me.pets[2]);
+console.log(myClass.others[1].lastName);
+console.log(myClass.others.lenght);
+console.log(myClass.others[2].pets[0]);
+
+
+
+
+	</script>
+</head>
+<body>
+
+</body>
+</html>
