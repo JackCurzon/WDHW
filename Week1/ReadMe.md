@@ -1,3 +1,3 @@
 Week 1
 
-I have discovered the magical cuteness of baby ducklings.
+I set up a basic recipe page using html.

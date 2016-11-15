@@ -1,3 +1,3 @@
 Week 3
 
-I showed my new wallpaper to like 7 people. 
+I modified my recipe page to match the sitemap and wireframe I created. In class work inlcuded. 

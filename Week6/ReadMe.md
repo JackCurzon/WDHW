@@ -1,1 +1,1 @@
-Week 6 work
+In class work, and worked on Midterm. 

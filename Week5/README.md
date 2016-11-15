@@ -1,0 +1,1 @@
+Midterm Propsoal can be found on my WordPress.

@@ -1,3 +1,3 @@
 Week 2
 
-I changed the wallpaper on my phone to a picture of a duckling. 
+I created a sitemap and wireframe for a recipe site. My in class work is included.
