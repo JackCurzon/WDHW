@@ -20,7 +20,7 @@
 			position: fixed;
 			height: auto;
 			width: 100%;
-			background-color: #A3D9B0;
+			background-color: #93BF9E;
 			padding: none;
 			margin: none;
 		}
@@ -63,7 +63,7 @@
 		nav a{
 			display: block;
 			text-decoration: none;
-			color: #8C8474;
+			color: #F2F0D5;
 		}
 
 		nav a:hover{
@@ -94,6 +94,7 @@
 
 		h1{
 			text-align: center;
+			color: 	#93BF9E;
 		}
 
 		div.home p.intro{
@@ -115,7 +116,7 @@
 			margin-right: calc(100%/40);
 			margin-top: 20px;
 			height: 60px;
-			background-color: #8C8474;
+			background-color: #F2F0D5;
 			text-align: center;
 			line-height: 60px;
 			border-radius: 10px;
@@ -129,7 +130,7 @@
 			margin-right: calc(100%/40);
 			margin-top: 20px;
 			height: 60px;
-			background-color: #8C8474;
+			background-color: #F2F0D5;
 			text-align: center;
 			line-height: 60px;
 			border-radius: 10px;
@@ -143,7 +144,8 @@
 		}
 
 		div.home a:hover{
-			color: #A3D9B0;
+			background-color: #93BF9E;
+			border-radius: 10px;
 		}
 
 		div.education{
@@ -154,7 +156,7 @@
 			margin-top: 2%;
 			margin-left: calc(100%/80);
 			margin-right: calc(100%/160);
-			background-color: #8C8474;
+			
 			border-radius: 10px;
 		}
 
@@ -166,29 +168,78 @@
 			margin-top: 2%;
 			margin-left: calc(100%/160);
 			margin-right: calc(100%/80);
-			background-color: #8C8474;
+			
 			border-radius: 10px;
 		}
 
 
 		div.photography{
-			background-color: green;
+			background-color: #40362E;
+			height: 100%
 		}
 
+		div.photo-left{
+	
+			
+			height: 100%;
+			float: left;
+			margin-left: 1%;
+		}
+
+		div.photo-right{
+	
+			height: 100%;
+			float: right;
+			margin-right: 1%;
+		}
+
+		div.photo-menu{
+			float: left;
+			height: 100%;
+			margin-top: auto;
+			margin-bottom: auto;
+			
+		}
+
+		img.l1{
+			display: block;
+			height: 48%;
+
+			margin-top: 2%;
+			margin-bottom: 2%;
+		}
+
+		img.l2{
+			display: block;
+			height: 48%;
+		
+			margin-bottom: 2%;
+		}
+
+
+		img.r{
+			display: block;
+			height: 97%;
+		
+			margin-top: 2%;
+			margin-bottom: 2%;
+		}
+		
+		
 		div.videography{
-			background-color: blue;
+			background-color: #EFEAD4;
 		}
 
 		div.web{
-			background-color: red;
+			background-color: #EFEAD4;
 		}
 
 		div.sound{
-			background-color: green;
+			background-color: #EFEAD4;
 		}
 
 		div.graphic{
-			background-color: #EFEAD4;
+			background-color: #40362E;
 		}
 
 		div.graphics{
@@ -225,7 +276,7 @@
 <div class="content">
 	<div class="home">
 		<p class="intro">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut nec scelerisque massa, vitae euismod turpis. Nam vitae vehicula arcu. Nulla vel dolor tristique, pulvinar urna at, blandit odio. Ut ullamcorper porta porttitor. Nulla sollicitudin leo sed mi tincidunt luctus. Sed gravida ullamcorper sapien, mollis viverra velit porta at. Integer ultrices erat convallis urna dapibus, imperdiet feugiat tellus luctus. Nullam non commodo arcu. Phasellus pharetra, nulla vitae maximus interdum, purus erat consequat libero, at vestibulum risus metus non erat. Duis vulputate elit sed dignissim dictum. Curabitur quis augue non justo faucibus aliquet eget non dolor. Nulla mattis sapien quis felis vestibulum, non lacinia odio faucibus.</p>
-		<p class="linkedin"><a href="www.linkedin.com/in/jcurzon">LinkedIn</a></p>
+		<p class="linkedin" window="blank"><a href="https://www.linkedin.com/in/jcurzon">LinkedIn</a></p>
 		<p class="email"><a href="mailto:jmc1135@nyu.edu">E-Mail</a></p>
 		<div class="education">
 			<h1>Education</h1>
@@ -234,8 +285,44 @@
 			<h1>Experience</h1>
 		</div>
 	</div>
-	<div class="photography"></div>
-	<div class="videography"></div>
+	<div class="photography">
+		<div class="photo-left">
+			<img class="l1" src="photos/_DSC0214.png">
+			<img class="l2" src="photos/DSC_0528.png">
+		</div>
+		<div class="photo-menu">
+			<div class="photo-nav">
+				<h1>Portraits</h1>
+				<br>
+				<h1>Landscapes</h1>
+				<br>
+				<h1>Concerts</h1>
+				<br>
+				<h1>Marco</h1>
+				<br>
+				<h1>Projects</h1>
+			</div>
+		</div>
+		<div class="photo-right">
+			<img class="r" src="photos/IMG_5338.png">
+		</div>
+	</div>
+	<div class="videography">
+		
+		 <div id="myCarousel" class="carousel slide">
+   <!-- Wrapper for slides -->
+   <div class="carousel-inner" role="listbox">
+     <div class="item active">
+       <iframe src="https://player.vimeo.com/video/153590887?byline=0&portrait=0" width="100%" height="100%" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+     </div>
+     <div class="item">
+       <img src="photos/lamp.png">
+     </div>
+     <div class="item">
+       <img src="photos/_DSC0023.png">
+     </div>
+   </div>
+	</div>
 	<div class="web"></div>
 	<div class="sound"></div>
 	<div class="graphic">
