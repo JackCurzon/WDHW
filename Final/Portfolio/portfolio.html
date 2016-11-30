@@ -1,315 +1,460 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-<meta charset="utf-8">
+    <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Jack Curzon</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:300" rel="stylesheet">
+    <style type="text/css">
+    * {
+        padding: none;
+        margin: none;
+        font-family: 'Raleway', sans-serif;
+    }
+    
+    nav {
+        display: block;
+        position: fixed;
+        height: auto;
+        width: 100%;
+        background-color: #93BF9E;
+        padding: none;
+        margin: none;
+    }
+    
+    nav div.portrait {
+        display: block;
+        float: left;
+        height: 100px;
+        width: 10%;
+        padding: none;
+    }
+    
+    nav div.portrait img {
+        height: 100%;
+        width: auto;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        padding: none;
+    }
+    
+    nav ul {
+        display: block;
+        float: left;
+        height: 100%;
+    }
+    
+    nav li {
+        display: inline-block;
+        float: left;
+        padding: 0;
+        width: auto;
+        margin-left: 10px;
+        margin-right: 10px;
+        height: 80px;
+        line-height: 100px;
+        text-align: center;
+        font-size: 20px;
+    }
+    
+    nav a {
+        display: block;
+        text-decoration: none;
+        color: #F2F0D5;
+    }
+    
+    nav a:hover {
+        text-decoration: none;
+        color: #40362E;
+    }
+    
+    div.content {
+        position: absolute;
+        top: 100px;
+        float: left;
+        display: block;
+        width: 600%;
+        height: calc(100% - (100px));
+    }
+    
+    div.home,
+    div.photography,
+    div.videography,
+    div.web,
+    div.sound,
+    div.graphic {
+        width: calc(100%/6);
+        height: 100%;
+        float: left;
+    }
+    
+    div.home {
+        background-color: #40362E;
+    }
+    
+    h1 {
+        text-align: center;
+        color: #93BF9E;
+    }
+    
+    h2 {
+        text-align: center;
+        color: #F2F0D5;
+        font-size: 26px;
+        padding: none;
+        margin: 0px;
+    }
+    
+    h3 {
+        text-align: center;
+        color: #F2F0D5;
+        font-size: 20px;
+        padding: none;
+        margin: 4px;
+    }
+    
+    h4 {
+        text-align: center;
+        color: #F2F0D5;
+    }
+    
 
-	<title>Jack Curzon</title>
-	 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-	 <link href="https://fonts.googleapis.com/css?family=Raleway:300" rel="stylesheet">
-	<style type="text/css">
-		*{
-			padding: none;
-			margin: none;
-			font-family: 'Raleway', sans-serif;
-		}
+    
+    div.home p.intro {
+        float: left;
+        width: calc(100%/1.5);
+        margin-left: calc(100%/40);
+        margin-top: 20px;
+        height: 150px;
+        line-height: 30px;
+        text-align: left;
+        color: #F2F0D5;
+    }
+    
+    div.home p.linkedin {
+        display: block;
+        float: right;
+        width: calc(100%/5);
+        margin-right: calc(100%/40);
+        margin-top: 20px;
+        height: 60px;
+        background-color: #F2F0D5;
+        text-align: center;
+        line-height: 60px;
+        border-radius: 10px;
+    }
+    
+    div.home p.email {
+        display: block;
+        float: right;
+        width: calc(100%/5);
+        margin-right: calc(100%/40);
+        margin-top: 20px;
+        height: 60px;
+        background-color: #F2F0D5;
+        text-align: center;
+        line-height: 60px;
+        border-radius: 10px;
+    }
+    
+    div.home a {
+        display: block;
+        color: #40362E;
+        text-decoration: none;
+        font-size: 24px;
+    }
+    
+    div.home a:hover {
+        background-color: #93BF9E;
+        border-radius: 10px;
+    }
+    
+    div.education {
+        display: block;
+        float: left;
+        width: calc((610%/16));
+        height: 65%;
+        margin-top: 2%;
+        margin-left: calc(100%/80);
+        margin-right: calc(100%/160);
+        border-radius: 10px;
+    }
 
-		nav{
-			display: block;
-			position: fixed;
-			height: auto;
-			width: 100%;
-			background-color: #A3D9B0;
-			padding: none;
-			margin: none;
-		}
-		nav div.portrait{
-			display: block;
-			float: left;
-			height: 100px;
-			width: 10%;
-			padding: none;
-		}
+    div.coursesL{
+    	display: block; 
+    	float: left; 
+    	width: 50%;
+    	text-align: right;
+    	padding-left: 0px;
+    	margin-left: 0px;
+    }
 
-		nav div.portrait img{
-			height: 100%;
-			width: auto;
-			display: block;
-			margin-left: auto;
-			margin-right: auto;
-			padding: none;
-		}
+    div.coursesR{
+    	display: block; 
+    	float: left; 
+    	width: 50%;
+    	text-align: left;
+    }
+    
 
-		nav ul{
-			display: block;
-			float: left;
-			height: 100%;
-		}
+    div.coursesL li, div.coursesR li{
+    	color: #F2F0D5;
+    	list-style: none;
+    	padding-top:5px;
 
-		nav li{
-			display: inline-block;
-			float: left;
-			padding: 0;
-			width: auto;
-			margin-left: 10px;
-			margin-right: 10px;
-			height: 80px;
-			line-height: 100px;
-			text-align: center;
-			font-size: 20px;
-		}
+    
+    }
+    
 
-		nav a{
-			display: block;
-			text-decoration: none;
-			color: #8C8474;
-		}
-
-		nav a:hover{
-			text-decoration: none;
-			color: #40362E;
-		}
-		
-
-		div.content{
-			position: absolute;
-			top: 100px;
-			float: left;
-			display: block;
-			width: 600%;
-			height: calc(100% - (100px));
-
-		}
-
-		div.home, div.photography, div.videography, div.web, div.sound, div.graphic{
-			width: calc(100%/6);
-			height: 100%;
-			float: left;
-		}
-
-		div.home{
-			background-color: #40362E;
-		}
-
-		h1{
-			text-align: center;
-		}
-
-		div.home p.intro{
-			float: left;
-			width: calc(100%/1.5);
-			margin-left: calc(100%/40);
-			margin-top: 20px;
-			height: 150px;
-			line-height: 30px;
-			text-align: left;
-			color: #F2F0D5;
-			}
-
-		div.home p.linkedin{
-
-			display: block;
-			float: right;
-			width: calc(100%/5);
-			margin-right: calc(100%/40);
-			margin-top: 20px;
-			height: 60px;
-			background-color: #8C8474;
-			text-align: center;
-			line-height: 60px;
-			border-radius: 10px;
-			}
-
-		div.home p.email{
-
-			display: block;
-			float: right;
-			width: calc(100%/5);
-			margin-right: calc(100%/40);
-			margin-top: 20px;
-			height: 60px;
-			background-color: #8C8474;
-			text-align: center;
-			line-height: 60px;
-			border-radius: 10px;
-			}
-
-		div.home a{
-			display: block;
-			color: #40362E;
-			text-decoration: none;
-			font-size: 24px;
-		}
-
-		div.home a:hover{
-			color: #A3D9B0;
-		}
-
-		div.education{
-			display: block;
-			float: left;
-			width: calc((610%/16));
-			height: 65%;
-			margin-top: 2%;
-			margin-left: calc(100%/80);
-			margin-right: calc(100%/160);
-			background-color: #8C8474;
-			border-radius: 10px;
-		}
-
-		div.experience{
-			display: block;
-			float: left;
-			width: calc((930%/16));
-			height: 65%;
-			margin-top: 2%;
-			margin-left: calc(100%/160);
-			margin-right: calc(100%/80);
-			background-color: #8C8474;
-			border-radius: 10px;
-		}
-
-
-		div.photography{
-			background-color: green;
-		}
-
-		div.videography{
-			background-color: blue;
-		}
-
-		div.web{
-			background-color: red;
-		}
-
-		div.sound{
-			background-color: green;
-		}
-
-		div.graphic{
-			background-color: #EFEAD4;
-		}
-
-		div.graphics{
-			width: 50%;
-			height: calc(100%-250px);
-		}
-
-		div.brands{
-			width: 50%;
-			height: calc(100%-250px);
-		}
-	
-
-	</style>
+    div.experience {
+        display: block;
+        float: left;
+        width: calc((930%/16));
+        height: 65%;
+        margin-top: 2%;
+        margin-left: calc(100%/160);
+        margin-right: calc(100%/80);
+        border-radius: 10px;
+    }
+    
+    div.photography {
+        background-color: #40362E;
+        height: 100%
+    }
+    
+    div.photo-left {
+        height: 100%;
+        float: left;
+        margin-left: 1%;
+    }
+    
+    div.photo-right {
+        height: 100%;
+        float: right;
+        margin-right: 1%;
+    }
+    
+    div.photo-menu {
+        float: left;
+        height: 100%;
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+    
+    img.l1 {
+        display: block;
+        height: 48%;
+        margin-top: 2%;
+        margin-bottom: 2%;
+    }
+    
+    img.l2 {
+        display: block;
+        height: 48%;
+        margin-bottom: 2%;
+    }
+    
+    img.r {
+        display: block;
+        height: 97%;
+        margin-top: 2%;
+        margin-bottom: 2%;
+    }
+    
+    div.videography {
+        background-color: #EFEAD4;
+    }
+    
+    div.web {
+        background-color: #EFEAD4;
+    }
+    
+    div.sound {
+        background-color: #EFEAD4;
+    }
+    
+    div.graphic {
+        background-color: #40362E;
+    }
+    
+    div.graphics {
+        width: 50%;
+        height: calc(100%-250px);
+    }
+    
+    div.brands {
+        width: 50%;
+        height: calc(100%-250px);
+    }
+    </style>
 </head>
+
 <body>
-<nav>
-	<div class="portrait">
-	<img src="img/headshot.png">
-	</div>
-	<ul>
-		<li><a href="#">Home</a></li>
-		<li><a href="#">Photography</a></li>
-		<li><a href="#">Videography</a></li>
-		<li><a href="#">Web Design</a></li>
-		<li><a href="#">Sound Design</a></li>
-		<li><a href="#">Graphic Design</a></li>
-
-
-	</ul>
-	
-</nav>
-
-<div class="content">
-	<div class="home">
-		<p class="intro">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut nec scelerisque massa, vitae euismod turpis. Nam vitae vehicula arcu. Nulla vel dolor tristique, pulvinar urna at, blandit odio. Ut ullamcorper porta porttitor. Nulla sollicitudin leo sed mi tincidunt luctus. Sed gravida ullamcorper sapien, mollis viverra velit porta at. Integer ultrices erat convallis urna dapibus, imperdiet feugiat tellus luctus. Nullam non commodo arcu. Phasellus pharetra, nulla vitae maximus interdum, purus erat consequat libero, at vestibulum risus metus non erat. Duis vulputate elit sed dignissim dictum. Curabitur quis augue non justo faucibus aliquet eget non dolor. Nulla mattis sapien quis felis vestibulum, non lacinia odio faucibus.</p>
-		<p class="linkedin"><a href="www.linkedin.com/in/jcurzon">LinkedIn</a></p>
-		<p class="email"><a href="mailto:jmc1135@nyu.edu">E-Mail</a></p>
-		<div class="education">
-			<h1>Education</h1>
-		</div>
-		<div class="experience">
-			<h1>Experience</h1>
-		</div>
-	</div>
-	<div class="photography"></div>
-	<div class="videography"></div>
-	<div class="web"></div>
-	<div class="sound"></div>
-	<div class="graphic">
-		<div class="graphics">
-			 
-    <!-- Begin Carousel -->
- <div id="myCarousel" class="carousel slide">
-   <!-- Wrapper for slides -->
-   <div class="carousel-inner" role="listbox">
-     <div class="item active">
-       <img src="photos/intersection.png">
-     </div>
-     <div class="item">
-       <img src="photos/lamp.png">
-     </div>
-     <div class="item">
-       <img src="photos/_DSC0023.png">
-     </div>
-   </div>
-   <!-- Left and right controls -->
- <a class="left carousel-control" href="#myCarousel" role="button" >
- <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
- <span class="sr-only">Previous</span>
- </a>
- <a class="right carousel-control" href="#myCarousel" role="button" >
- <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
- <span class="sr-only">Next</span>
- </a>
- </div>
- <!-- Indicators -->
- <ol class="carousel-indicators">
- <li class="item1" class="active"></li>
- <li class="item2"></li>
- <li class="item3"></li>
- </ol>
-		</div>
-		<div class="brands"></div>
-	</div>
-</div>
-	
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <nav>
+        <div class="portrait">
+            <img src="img/headshot.png">
+        </div>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Photography</a></li>
+            <li><a href="#">Videography</a></li>
+            <li><a href="#">Web Design</a></li>
+            <li><a href="#">Sound Design</a></li>
+            <li><a href="#">Graphic Design</a></li>
+        </ul>
+    </nav>
+    <div class="content">
+        <div class="home">
+            <p class="intro">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut nec scelerisque massa, vitae euismod turpis. Nam vitae vehicula arcu. Nulla vel dolor tristique, pulvinar urna at, blandit odio. Ut ullamcorper porta porttitor. Nulla sollicitudin leo sed mi tincidunt luctus. Sed gravida ullamcorper sapien, mollis viverra velit porta at. Integer ultrices erat convallis urna dapibus, imperdiet feugiat tellus luctus. Nullam non commodo arcu. Phasellus pharetra, nulla vitae maximus interdum, purus erat consequat libero, at vestibulum risus metus non erat. Duis vulputate elit sed dignissim dictum. Curabitur quis augue non justo faucibus aliquet eget non dolor. Nulla mattis sapien quis felis vestibulum, non lacinia odio faucibus.</p>
+            <p class="linkedin" window="blank"><a href="https://www.linkedin.com/in/jcurzon">LinkedIn</a></p>
+            <p class="email"><a href="mailto:jmc1135@nyu.edu">E-Mail</a></p>
+            <div class="education">
+                <h1>Education</h1>
+                <h2>New York University</h2>
+                <h3>Bachelor of Science | Integrated Digital Media <br> 2014-2018 | 3.4 GPA</h3>
+                <hr style="border-color:#93BF9E">
+                <h4>Courses</h4>
+                <div class="coursesL">
+                    <p>
+                        <ul>
+                            <li>Audio Foundation Studio</li>
+                            <li>Contemp. Techniques in Sound Art</li>
+                            <li>Visual Foundation Studio</li>
+                            <li>Creative Coding</li>
+                            <li>Intro to Web Development</li>
+                            <li>Digital Photography and Imaging</li>
+                            <li>Photography and Words</li>
+                            <li>Physics of Motion and Sound</li>
+                            <li>Physics of Electricity and Light</li>
+                            <li>Statistics for Social Science</li>
+                           
+                            
+                        </ul>
+                    </p>
+                </div>
+                <div class="coursesR">
+                    <p>
+                        <ul>
+                            <li>Cultural Foundations I/II/III</li>
+                            <li>Social Foundations I/II/III</li>
+                            <li>History of The Universe</li>
+                            <li>Writing I/II</li>
+                            <li>Introduction to Social Impact</li>
+                            <li>Political Communication</li>
+                            <li>Introduction to Media Studies</li>
+                            <li>Programming and Problem Solving</li>
+                            <li>Still and Moving Images</li>
+                            <li>Dynamic Web Applications</li>
+                        </ul>
+                    </p>
+                </div>
+            </div>
+            <div class="experience">
+                <h1>Experience</h1>
+            </div>
+        </div>
+        <div class="photography">
+            <div class="photo-left">
+                <img class="l1" src="photos/_DSC0214.png">
+                <img class="l2" src="photos/DSC_0528.png">
+            </div>
+            <div class="photo-menu">
+                <div class="photo-nav">
+                    <h1>Portraits</h1>
+                    <br>
+                    <h1>Landscapes</h1>
+                    <br>
+                    <h1>Concerts</h1>
+                    <br>
+                    <h1>Macro</h1>
+                    <br>
+                    <h1>Projects</h1>
+                </div>
+            </div>
+            <div class="photo-right">
+                <img class="r" src="photos/IMG_5338.png">
+            </div>
+        </div>
+        <div class="videography">
+            <iframe src="https://player.vimeo.com/video/153590887?byline=0&portrait=0" width="100%" height="100%" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+        </div>
+        <div class="web"></div>
+        <div class="sound"></div>
+        <div class="graphic">
+            <div class="graphics">
+                <!-- Begin Carousel -->
+                <div id="myCarousel" class="carousel slide">
+                    <!-- Wrapper for slides -->
+                    <div class="carousel-inner" role="listbox">
+                        <div class="item active">
+                            <img src="photos/intersection.png">
+                        </div>
+                        <div class="item">
+                            <img src="photos/lamp.png">
+                        </div>
+                        <div class="item">
+                            <img src="photos/_DSC0023.png">
+                        </div>
+                    </div>
+                    <!-- Left and right controls -->
+                    <a class="left carousel-control" href="#myCarousel" role="button">
+                        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="right carousel-control" href="#myCarousel" role="button">
+                        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+                <!-- Indicators -->
+                <ol class="carousel-indicators">
+                    <li class="item1" class="active"></li>
+                    <li class="item2"></li>
+                    <li class="item3"></li>
+                </ol>
+            </div>
+            <div class="brands"></div>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="bootstrap.min.js"></script>
-
     <script type="text/javascript">
-        $(document).ready(function(){
-            $("#myCarousel").carousel({
-                interval: 5000, pause: "hover"
-            });
-
-            //previous and next buttons
-
-            $(".left").click(function(){
-                $("#myCarousel").carousel("prev")
-            });
-             $(".right").click(function(){
-                $("#myCarousel").carousel("next")
-            });
-             //slide indicators 
-
-             $(".item1").click(function(){
-                $("#myCarousel").carousel(0);
-             });
-
-             $(".item2").click(function(){
-                $("#myCarousel").carousel(1);
-             });
-
-             $(".item3").click(function(){
-                $("#myCarousel").carousel(2);
-             });
-
-
+    $(document).ready(function() {
+        $("#myCarousel").carousel({
+            interval: 5000,
+            pause: "hover"
         });
+
+        //previous and next buttons
+
+        $(".left").click(function() {
+            $("#myCarousel").carousel("prev")
+        });
+        $(".right").click(function() {
+            $("#myCarousel").carousel("next")
+        });
+        //slide indicators 
+
+        $(".item1").click(function() {
+            $("#myCarousel").carousel(0);
+        });
+
+        $(".item2").click(function() {
+            $("#myCarousel").carousel(1);
+        });
+
+        $(".item3").click(function() {
+            $("#myCarousel").carousel(2);
+        });
+
+
+    });
     </script>
 </body>
+
 </html>
