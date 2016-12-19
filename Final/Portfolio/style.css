@@ -1,0 +1,615 @@
+       /*Full Site Styling **************************************************************************************************************/
+       
+       * {
+           font-family: 'Raleway', sans-serif;
+           font-weight: 100;
+       }
+       
+       h1 {
+           text-align: center;
+           color: #93BF9E;
+       }
+       
+       h2 {
+           text-align: center;
+           color: #F2F0D5;
+           font-size: 20px;
+           margin: 0px;
+
+       }
+       
+       h3 {
+           text-align: center;
+           color: #F2F0D5;
+           font-size: 16px;
+           padding: none;
+           margin: 4px;
+       }
+       
+       h4 {
+           text-align: center;
+           color: #93BF9E;
+           font-size: 14px;
+           margin: 0;
+       }
+       
+       ul {
+           padding: 0;
+        
+       }
+       
+       hr {
+           border-color: #93BF9E;
+           margin: 10px;
+       }
+       /*Navigation **************************************************************************************************************/
+       
+       nav {
+           display: block;
+           position: fixed;
+           height: 100px;
+           width: 100%;
+           background-color: #93BF9E;
+           padding: none;
+
+           margin: none;
+       }
+       
+       nav div.portrait {
+           display: block;
+           float: left;
+           height: 100px;
+           width: 10%;
+           padding: none;
+       }
+       
+       nav div.portrait img {
+           height: 100%;
+           width: auto;
+           display: block;
+           margin-left: auto;
+           margin-right: auto;
+           padding: none;
+       }
+       
+       h1.name {
+           color: #40362E;
+           float: left;
+           text-align: left;
+       }
+       
+       nav ul {
+           display: block;
+           float: left;
+           height: 100%;
+       }
+       
+       nav li {
+          
+           float: left;
+           padding: 0;
+          margin-top: 0;
+           height: 50%;
+          list-style: none;
+           
+       }
+       
+       nav a {
+           display: block;
+           text-decoration: none;
+           color: #F2F0D5;
+       }
+       
+       nav a:hover {
+           text-decoration: none;
+           color: #40362E;
+       }
+
+       nav li#homeBtn{
+
+        height: 100px; 
+        width: 250px; 
+        padding-right: 50px; 
+        background: url(menu/home.png) no-repeat;
+
+       }
+
+        nav li#homeBtn:hover{
+
+        background: url(menu/home_hover.png) no-repeat;
+
+      }
+
+      nav li#photoBtn{
+
+        height: 45px; 
+        width: 160px; 
+        background: url(menu/photo.png) no-repeat;
+
+       }
+
+        nav li#photoBtn:hover{
+
+        background: url(menu/photo_hover.png) no-repeat;
+
+      }
+      nav li#videoBtn{
+
+        height: 55px; 
+        width: 160px; 
+        background: url(menu/video.png) no-repeat;
+
+       }
+
+        nav li#videoBtn:hover{
+
+        background: url(menu/video_hover.png) no-repeat;
+
+      }
+
+      nav li.graphy{
+        height: 100px; 
+        width: 290px; 
+        margin-right: 30px;
+        background: url(menu/graphy.png) no-repeat;
+
+      }
+
+      nav li#webBtn{
+
+        height: 45px; 
+        width: 218px; 
+        background: url(menu/Web.png) no-repeat;
+
+       }
+
+        nav li#webBtn:hover{
+
+        background: url(menu/Web_hover.png) no-repeat;
+
+      }
+      nav li#graphicBtn{
+
+        height: 55px; 
+        width: 218px; 
+        background: url(menu/graphic.png) no-repeat;
+
+       }
+
+        nav li#graphicBtn:hover{
+
+        background: url(menu/graphic_hover.png) no-repeat;
+
+      }
+
+      nav ul.design{
+        height: 100px; 
+        width: 290px; 
+        margin-right: 30px;
+        background: url(menu/design.png) no-repeat;
+
+      }
+
+      nav ul.graphy{
+        height: 100px; 
+        width: 290px; 
+        margin-right: 30px;
+        background: url(menu/graphy.png) no-repeat;
+
+      }
+
+      ul.one:hover ~ ul.graphy{
+        background: url(menu/graphy_hover.png) no-repeat;
+        height: 100px; 
+        width: 290px;
+        margin-top: 23px;
+      }
+
+      ul.two:hover ~ ul.design{
+        background: url(menu/design_hover.png) no-repeat;
+      }
+
+     
+
+       /*END OF NAVIGATION **************************************************************************************************************/
+       /*Content **************************************************************************************************************/
+       
+       div.content {
+           position: absolute;
+           top: 100px;
+           float: left;
+           display: block;
+           width: 500%;
+           height: calc(100% - (100px));
+       }
+       
+       div.home,
+       div.photography,
+       div.videography,
+       div.web,
+       div.graphic {
+           width: calc(100%/5);
+           height: 100%;
+           float: left;
+       }
+       /*Home Page **************************************************************************************************************/
+       
+       div.home {
+           background-color: #40362E;
+       }
+       
+       div.home p.intro {
+           float: left;
+           width: calc(100%/1.5);
+           margin-left: calc(100%/40);
+           margin-top: 20px;
+           height: 150px;
+           line-height: 30px;
+           text-align: left;
+           color: #F2F0D5;
+           font-size: 16px;
+       }
+       
+       div.home p.linkedin {
+           display: block;
+           float: right;
+           width: calc(100%/5);
+           margin-right: calc(100%/40);
+           margin-top: 20px;
+           height: 60px;
+           background-color: #F2F0D5;
+           text-align: center;
+           line-height: 60px;
+           border-radius: 10px;
+       }
+       
+       div.home p.email {
+           display: block;
+           float: right;
+           width: calc(100%/5);
+           margin-right: calc(100%/40);
+           margin-top: 20px;
+           height: 60px;
+           background-color: #F2F0D5;
+           text-align: center;
+           line-height: 60px;
+           border-radius: 10px;
+       }
+       
+       div.home a {
+           display: block;
+           color: #40362E;
+           text-decoration: none;
+           font-size: 24px;
+       }
+       
+       div.home a:hover {
+           background-color: #93BF9E;
+           border-radius: 10px;
+       }
+       
+       div.education {
+           display: block;
+           float: left;
+           width: calc((610%/16));
+           height: 70%;
+           margin-left: calc(100%/80);
+           margin-right: calc(100%/160);
+           border-radius: 10px;
+       }
+       
+       div.coursesL {
+           display: block;
+           float: left;
+           width: 50%;
+           text-align: right;
+           padding-left: 0px;
+           margin-left: 0px;
+       }
+       
+       div.coursesR {
+           display: block;
+           float: left;
+           width: 50%;
+           text-align: left;
+       }
+       
+       div.coursesL li,
+       div.coursesR li {
+           color: #F2F0D5;
+           list-style: none;
+           padding-top: 5px;
+       }
+       
+       div.experience {
+           display: block;
+           float: left;
+           width: calc((930%/16));
+           height: 70%;
+           margin-left: calc(100%/160);
+           margin-right: calc(100%/80);
+           border-radius: 10px;
+       }
+       
+       div.exp1,
+       div.exp2,
+       div.exp3 {
+           display: block;
+           float: left;
+           width: calc(100%/3);
+       }
+       
+       div.experience p {
+           line-height: 25px;
+           color: #F2F0D5;
+           margin: 20px;
+       }
+       /*END OF HOME **************************************************************************************************************/
+       /*Photography **************************************************************************************************************/
+       
+       div.photography {
+           background-color: #40362E;
+           height: 100%
+       }
+       
+       div.photo-left {
+           width: 35%;
+           height: 100%;
+           float: left;
+           margin-left: 1%;
+          
+       }
+       
+       div.photo-right {
+           width: 35%;
+           height: 100%;
+           float: right;
+           margin-right: 1%;
+       }
+       
+       div.photo-menu.container {
+           float: left;
+           height: 80vh;
+           width: 28%;
+           text-align: center;
+           /*display: flex;*/
+           /*align-items: center;*/
+           
+       }
+       
+       div.photo-menu-va.item {
+           float: left;
+           display: block;
+           width: 100%;
+           display: flex;
+           flex-direction: column;
+           margin-top: 10vh;
+           /*justify-content: center;*/
+           
+       }
+       
+       div.photography button {
+           display: block;
+           border: 0;
+           color: #40362E;
+           height: 50px;
+           width: 160px;
+           background-color: #F2F0D5;
+           border-radius: 10px;
+           font-size: 20px;
+           margin: 10px auto;
+       }
+       
+       div.photography button.nycki {
+           margin: 10px auto;
+       }
+       
+       div.photography button.nyucki {
+           margin: 10px 20px;
+       }
+       
+       div.photography button:focus {
+           outline: 0 none;
+       }
+       
+       div.photography button.active,
+       div.photography button:hover {
+           background: #93BF9E;
+       }
+
+       div.photography a{
+          display: block;
+           border: 0;
+           color: #40362E;
+           height: 50px;
+           width: 160px;
+           background-color: #F2F0D5;
+           border-radius: 10px;
+           font-size: 20px;
+           margin: 10px auto;
+           line-height: 50px;
+         }
+
+         div.photography a:hover{
+          background: #93BF9E;
+         }
+       
+       img.l1 {
+           max-height: 48vh;
+           max-width: 100%;
+           margin-top: 6%;
+           margin-bottom: 7%;
+
+       }
+       
+       img.l2 {
+           max-height: 48vh;
+           width: auto;
+           max-width: 100%;
+           margin-bottom: 6%;
+       }
+       
+       img.r {
+           max-height: 97vh;
+           width: auto;
+           max-width: 100%;
+           margin-top: 2%;
+           margin-bottom: 2%;
+       }
+       
+       div.photography div.mix {
+           background: none;
+       }
+       
+       div.mix::before {
+           height: 0;
+       }
+       /*END OF PHOTOGRAPHY **************************************************************************************************************/
+       /*Videography **************************************************************************************************************/
+       
+       div.videography {
+           background-color: #40362E;
+           height: 100%;
+       }
+       
+       div.videography h2 {
+           padding: 10px;
+       }
+       
+       div.videography div#myCarousel1 {
+           height: 100%;
+       }
+       
+       div.videography div#myCarousel1 div.carousel-inner {
+           height: 100%;
+           width: 78%;
+           margin-left: auto;
+           margin-right: auto;
+       }
+       /*END OF VIDEOGRPAHY **************************************************************************************************************/
+       /*Web Design **************************************************************************************************************/
+       
+       div.web {
+           background-color: #40362E;
+           height: 100%
+       }
+       
+       div.web div.controls {
+           display: block;
+           text-align: center;
+           padding-top: 10px;
+       }
+       
+       div.web button {
+           display: inline-block;
+           border: 0;
+           color: #40362E;
+           height: 40px;
+           width: 160px;
+           background-color: #F2F0D5;
+           border-radius: 10px;
+           font-size: 16px;
+       }
+       
+       div.web button.nycki {
+           margin: 10px auto;
+       }
+       
+       div.web button.nyucki {
+           margin: 10px 20px;
+       }
+       
+       div.web button:focus {
+           outline: 0 none;
+       }
+       
+       div.web button.active,
+       div.web button:hover {
+           background: #93BF9E;
+       }
+       
+       .container {
+           height: 80%;
+           width: 90%;
+           margin: auto;
+           position: relative;
+       }
+       
+       .container:after {
+           content: '';
+           display: inline-block;
+           width: 100%;
+       }
+       /* Mobile First Styling this will apply unless a screen of a certain min width is detected */
+       
+       .container .mix,
+       .container .gap {
+           display: inline-block;
+           width: 100%;
+       }
+       
+       .container .mix {
+           text-align: left;
+           background: #AAA;
+           border-radius: 8px;
+           display: none;
+       }
+       
+       .container .mix:after {
+           /* display data attributes or classes using css */
+           display: inline-block;
+       }
+       /* this is optional but lets use another psuedo class selector to add more padding */
+       
+       div.nyucki,
+       div.nycki {
+           height: 100%;
+       }
+       
+       iframe.iframe {
+           position: relative;
+           float: left;
+           width: 100%;
+           height: 100%;
+       }
+       
+       iframe body {
+           height: 100%;
+       }
+       /*END OF WEB DESIGN **************************************************************************************************************/
+       /*Graphic Design **************************************************************************************************************/
+       
+       div.graphic {
+           background-color: #40362E;
+           height: 100%
+       }
+       
+       div.graphics {
+           float: left;
+           width: 50%;
+       }
+       
+       div.gs {
+           max-height: 100%;
+           padding: 0 10%;
+           vertical-align: middle;
+       }
+       
+       div.brands {
+           float: left;
+           width: 50%;
+       }
+       div#myCarousel2,
+       div#myCarousel3 {
+        display: flex;
+        align-items: center;
+      }
+       
+       div#myCarousel2 img,
+       div#myCarousel3 img {
+           max-height: 70vh;
+           width: auto;
+           margin: 0 auto;
+       }
+       /*END OF GRAPHIC DESIGN **************************************************************************************************************/
+       /*END OF CONTENT **************************************************************************************************************/
