@@ -301,16 +301,17 @@
        div.coursesL {
            display: block;
            float: left;
-           width: 50%;
+           width: 47.5%;
            text-align: right;
            padding-left: 0px;
            margin-left: 0px;
+           margin-right: 5%;
        }
        
        div.coursesR {
            display: block;
            float: left;
-           width: 50%;
+           width: 47.5%;
            text-align: left;
        }
        
@@ -383,7 +384,7 @@
            width: 100%;
            display: flex;
            flex-direction: column;
-           margin-top: 10vh;
+           margin-top: 20vh;
            /*justify-content: center;*/
            
        }
